@@ -1,0 +1,42 @@
+//Pre-increment Operator Overloading Method 1 
+
+#include<iostream>
+using namespace std;
+
+class pre
+{
+    public:
+
+    int x;
+
+    pre(int a)
+    {
+        x=a;
+    }
+
+    void operator ++()
+    {
+        x++;
+    }
+    void display()
+    {
+        cout<<"X="<<x<<endl;
+    }
+};
+
+int main()
+{
+    pre p1(10);
+
+    cout<<"Before increment"<<endl;
+
+    p1.display();
+
+    ++p1;
+
+    cout<<"After Increment"<<endl;
+
+    p1.display();
+
+    return 0;
+}
