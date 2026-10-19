@@ -14,7 +14,7 @@ class demo
      x=a;
    }
 
-   demo operator *(demo &obj)
+   demo operator *(demo obj)
    {
     demo temp(0);
     temp.x=x*obj.x;
